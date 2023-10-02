@@ -26,7 +26,7 @@ loginForm.addEventListener('submit', (event) => {
 
       console.log('current logged in user', user)
       // store the current user into our localStorage to allow the data to persist'
-      localStorage.setItem('currentUser', user)
+      localStorage.setItem('currentUser', JSON.stringify(user))
 
       window.location.href = './html/index.html';
     } else {
