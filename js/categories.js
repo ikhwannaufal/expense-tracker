@@ -18,7 +18,7 @@ createBtn.addEventListener('click', (event) => {
   // Get the 'currentUser' from localStorage
   const currentUser = JSON.parse(localStorage.getItem('currentUser'))
 
-  currentUser.categories.expense.push(categoryName.value)
+  currentUser.categories.expenses.push(categoryName.value)
 
   console.log(currentUser)
 
